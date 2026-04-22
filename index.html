@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+    // tugas 1
+    function hitung_luas(panjang, lebar) {
+        let luas = panjang * lebar;
+        return luas;
+    }
+
+    // contoh
+    let panjang = 10;
+    let lebar = 5;
+    let hasil = hitung_luas(panjang, lebar);
+    console.log(`luas persegi panjang: ${hasil} cm2`);
+
+
+    
+    //tugas 2
+    function celsiusKeFahrenheit(celsius) {
+    return (celsius * 9/5) + 32;
+    }
+
+    //contoh
+    console.log(celsiusKeFahrenheit(0));   // 32
+    console.log(celsiusKeFahrenheit(100)); // 212
+    console.log(celsiusKeFahrenheit(37));  // 98.6
+
+
+    //tugas 3
+    const totalBelanja = function(harga, jumlah, diskonPersen) {
+    let subtotal = harga * jumlah;
+    let diskon = subtotal * (diskonPersen / 100);
+    return subtotal - diskon;
+    }
+
+    //Contoh
+    let total = totalBelanja(50000, 3, 10); // 3 barang, diskon 10%
+    console.log('Total: Rp' + total); // Output: Total: Rp135000
+    </script>
+</body>
+</html>
